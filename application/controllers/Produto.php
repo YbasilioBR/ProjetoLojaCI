@@ -26,11 +26,9 @@ class Produto extends CI_Controller {
                 $descricao = $this->input->post('descricao');
                 $valor = $this->input->post('valor');
 
-                $this->produto->inserir_produtos([
-                        
-                        'descricao' => $descricao,
-                        'valor' => $valor  
-                ]);
+                $data = array('descricao'=>$this->$descricao,'valor'=>$this->$valor);
+
+                $this->produto->inserir_produtos($valor);
         }
         
 }

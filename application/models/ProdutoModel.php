@@ -11,6 +11,8 @@ class ProdutoModel extends CI_Model{
     }
 
     public function inserir_produtos($data){
+        
+        $this->load->database();
         $this->db->insert("produto",$data);
         
     }
