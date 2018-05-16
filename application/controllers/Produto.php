@@ -21,16 +21,15 @@ class Produto extends CI_Controller {
         public function inserir_produtos(){
 
                 $this->load->view("produto/inserir");
-                $this->load->model("ProdutoModel","produto");
 
                 $descricao = $this->input->post('descricao');
                 $valor = $this->input->post('valor');
 
-                $this->produto->inserir_produtos([
-                        
-                        'descricao' => $descricao,
-                        'valor' => $valor  
-                ]);
+                $dados = array('descricao'=>$descricao, 'valor'=>$valor);
+
+                $this->load->model("ProdutoModel","produto");
+
+                $this->produto->inserir_produtos($dados);
         }
         
 }
