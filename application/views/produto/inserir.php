@@ -5,11 +5,18 @@
         <title>Document</title>
     </head>
         <body>
-            <h1>Cadastro de produtos</h1>
+        <?php echo form_open('Produto/index'); ?>        
+            <h1>Cadastro de produtos ilicitos</h1>
             
-            <input
+            <p> -- DIGITE O PRODUTO A SER INSERIDO -- </p>
 
+            <input type="text" name="descricao">
+            </br>
+            <input type="number" name="valor">
+            </br>
+            <input type="submit" name="inserir" value="Gravar">
 
+            
         </body>
     </head>
 </html>
