@@ -18,24 +18,22 @@ class Produto extends CI_Controller {
                 var_dump($resultado);
         }
 
-        public function inserir_produtos(){
+        public function inserir(){
 
                 $this->load->view("produto/inserir");
 
                 $descricao = $this->input->post('descricao');
                 $valor = $this->input->post('valor');
+                
+                $data = array('descricao'=>$descricao,'valor'=>$valor);
 
-<<<<<<< HEAD
-                $data = array('descricao'=>$this->$descricao,'valor'=>$this->$valor);
+                $this->load->model('ProdutoModel');
 
-                $this->produto->inserir_produtos($valor);
-=======
-                $dados = array('descricao'=>$descricao, 'valor'=>$valor);
-
-                $this->load->model("ProdutoModel","produto");
-
-                $this->produto->inserir_produtos($dados);
->>>>>>> b54fa4c13740466439297e5680d1834e13710e7b
+                if($this->ProdutoModel->inserir_produtos($data)){
+                        echo "ok!";
+                }else{
+                        echo "fail";
+                }
         }
         
 }

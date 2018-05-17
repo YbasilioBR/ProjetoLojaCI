@@ -5,7 +5,8 @@
         <title>Document</title>
     </head>
         <body>
-        <?php echo form_open('Produto/index'); ?>        
+        <form method="post" action="<?php echo base_url()?>Produto/inserir">
+              
             <h1>Cadastro de produtos ilicitos</h1>
             
             <p> -- DIGITE O PRODUTO A SER INSERIDO -- </p>
@@ -15,7 +16,7 @@
             <input type="number" name="valor">
             </br>
             <input type="submit" name="inserir" value="Gravar">
-
+        </form>
             
         </body>
     </head>
