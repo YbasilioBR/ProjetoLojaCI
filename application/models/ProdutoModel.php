@@ -13,12 +13,10 @@ class ProdutoModel extends CI_Model{
 	    return $resultado;
     }
 
-    public function inserir_produtos($data){
+    public function inserir_produtos($data){  
         
-     
-        
-        $this->db->insert("produto",$data);
-
+        $this->db->set($data);
+        $this->db->insert('produto');
     }
     
 }
