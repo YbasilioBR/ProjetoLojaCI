@@ -14,15 +14,15 @@ class Produto extends CI_Controller {
 	{
                 $texto = "Você está usando o controller produtos";
                 $dados = array("mensagem" => $texto);
-                $this->load->view("produto/listar", $dados);
+                $this->load->view("produto/principal", $dados);
 	}
 
 	public function listar_produto()
 	{
+                
                 $this->load->model("ProdutoModel","produto");        
-                $resultado = $this->produto->listar();
-                echo '<pre>';
-                var_dump($resultado);
+                $dados['resultado'] = $this->produto->listar();
+                $this->load->view("produto/listar",  $dados);
         }
 
         public function inserir_produto(){
