@@ -6,17 +6,23 @@ class ProdutoModel extends CI_Model{
         parent::__construct();
     }
 
-    public function listar_produtos()
+    public function listar()
     {
         $this->db->select("id_produto, descricao, valor");        
 	    $resultado = $this->db->get('produto')->result();
 	    return $resultado;
     }
 
-    public function inserir_produtos($data){  
+    public function inserir($data){  
         
         $this->db->set($data);
         $this->db->insert('produto');
+    }
+
+    function alterar($data) {
+        $this->db->where('id_produto', $data['id_produto']);
+        $this->db->set($data);
+        return $this->db->update('produto', $data);
     }
     
 }
