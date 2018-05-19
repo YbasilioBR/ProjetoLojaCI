@@ -24,5 +24,12 @@ class ProdutoModel extends CI_Model{
         $this->db->set($data);
         return $this->db->update('produto', $data);
     }
+
+    public function GetProduto($idProduto){
+        $this->db->select("id_produto, descricao, valor");
+        $this->db->where('id_produto', $idProduto );        
+	    $resultado = $this->db->get('produto')->result();
+	    return $resultado;
+    }
     
 }

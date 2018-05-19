@@ -6,12 +6,12 @@
 </head>
 <body>
 <h1>TITULOS CADASTRADOS</h1>
-<form method="" action="<?php  echo base_url(); ?>​controller_name/function_name">
+<form method="post" action="carregarProduto">
 <?php foreach ($resultado as $result): ?>
     <div>
        <p><?php echo $result->descricao; ?></p>
        <p><?php echo $result->valor; ?></p>
-       <button id="submit-buttons" type="submit" ​​​​​>Alterar</button>
+       <button id="GetProd" type="submit" value="<?php echo $result->id_produto; ?>" ​​​​​>Alterar</button>
     </div>
     </br>
 <?php endforeach; ?>

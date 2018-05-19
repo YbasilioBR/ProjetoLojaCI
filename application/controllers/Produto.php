@@ -18,8 +18,7 @@ class Produto extends CI_Controller {
 	}
 
 	public function listar_produto()
-	{
-                
+	{   
                 $this->load->model("ProdutoModel","produto");        
                 $dados['resultado'] = $this->produto->listar();
                 $this->load->view("produto/listar",  $dados);
@@ -37,12 +36,20 @@ class Produto extends CI_Controller {
                 if ($this->input->post('add')){
                         $this->ProdutoModel->inserir($data);
                         echo "Records Saved Successfully";
-                }                
-             
+                }    
         }
 
-        public function alterar_produto() {
-                
+        public function carregarProduto()
+	{   
+                $idProduto = $this->input->post('getProd');
+
+                $this->load->model("ProdutoModel","produto");        
+                $dados['resultado'] = $this->produto->GetProduto($idProduto);
+                $this->load->view("produto/alterar",  $dados);
+        }
+
+        public function alterar_produto() {                
+
                 $id_produto = $this->input->post('id_produto');
                 $descricao = $this->input->post('descricao');
                 $valor = $this->input->post('valor');

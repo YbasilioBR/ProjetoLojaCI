@@ -11,11 +11,17 @@
             
             <p> -- DIGITE O PRODUTO A SER INSERIDO -- </p>
 
+            <div>
+
             <input type="text" name="descricao">
-            </br>
-            <input type="number" name="valor">
-            </br>
+            
+            <input type="text" name="valor">
+
+            </div>
+
             <input type="submit" name="add" value="Gravar">
+
+
         </form>
             
         </body>
