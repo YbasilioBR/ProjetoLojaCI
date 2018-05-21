@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	
+}
+
+.fundo{	
+	background-color:black;
+	position:absolute; 
+    width:100%; 
+    height:100%;
+}
+
+.cabecalho{	
+	background-color:white;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:25%;
+	margin-left:15%;
+	margin-right:15%;	
+    background-size: 80%;
+    background-image:url(../imagens/Capa.jpg);
+}
+
+.conteudo{	
+	margin-left:15%;
+	margin-right:15%;
+	background-color:white;
+	position:center;
+	height:700px;
+	box-shadow: 0 0 20px #0B243B;
+}
+
+.dentroconteudo{	
+	margin-top:5px;
+	margin-left:15%;
+	margin-right:15%;
+	background-color:white;
+	position:center;
+	background-size: 100%;	
+	height:100%;
+	
+}
