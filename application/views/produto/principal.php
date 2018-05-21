@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Manga Base - Inicio</title>
-    <link rel="stylesheet" href="../css/base-style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../css/base-style.css?v=<?php echo time(); ?>">
 </head>
 <body class="fundo">
-    <div class="cabecalho">
+    <div class="cabecalho"/>
        
     </div>
     <div class="conteudo">
