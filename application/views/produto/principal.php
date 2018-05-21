@@ -7,8 +7,7 @@
 </head>
 <body class="fundo">
     <div class="cabecalho">
-        <h1>Mangá Base</h1>
-            <h2>Inicio</h2>
+       
     </div>
     <div class="conteudo">
         <div class="dentroconteudo">
@@ -18,7 +17,4 @@
     </div>
 
 </body>
-</head>
-
-
 </html>
