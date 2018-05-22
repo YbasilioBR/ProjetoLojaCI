@@ -19,10 +19,15 @@ class ProdutoModel extends CI_Model{
         $this->db->insert('produto');
     }
 
-    function alterar($data) {
+    public function alterar($data) {
         $this->db->where('id_produto', $data['id_produto']);
         $this->db->set($data);
         return $this->db->update('produto', $data);
+    }
+
+    public function excluir($id) {
+        $this->db->where('id_produto', $id);
+        $this->db->delete('produto'); 
     }
 
     public function GetProduto($idProduto){

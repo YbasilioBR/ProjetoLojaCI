@@ -2,28 +2,24 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Document</title>
+        <title>Manga Base - Inserir</title>
+        <link rel="stylesheet" type="text/css" href="../../css/base-style.css?v=<?php echo time(); ?>">
     </head>
-        <body>
-        <form method="post">
-              
-            <h1>Cadastro de produtos ilicitos</h1>
-            
-            <p> -- DIGITE O PRODUTO A SER INSERIDO -- </p>
+    <body class="fundo">
 
-            <div>
-
-            <input type="text" name="descricao">
-            
-            <input type="text" name="valor">
-
+        <div class="cabecalho"></div>
+            <form method="post" action="alterar_produto">
+            <div class="conteudo">
+                 <div class="dentroconteudo">
+                    <h1> DIGITE O PRODUTO A SER INSERIDO </h1>
+                    <label>Descricao</label>
+                    <input type="text" name="descricao">
+                    <label>Valor</label>
+                    <input type="text" name="valor">
+                    <input type="submit" name="add" value="Gravar">
+                </div>
             </div>
-
-            <input type="submit" name="add" value="Gravar">
-
-
-        </form>
-            
-        </body>
-    </head>
+            </form>
+        </div>
+    </body>
 </html>

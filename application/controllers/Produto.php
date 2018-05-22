@@ -41,7 +41,6 @@ class Produto extends CI_Controller {
 
         public function carregarProduto()
 	{                  
-                
                 $idProduto = $this->input->get('GetProd');
                 
                 $this->load->model("ProdutoModel","produto");        
@@ -57,10 +56,22 @@ class Produto extends CI_Controller {
 
                 $data = array('id_produto'=>$id_produto, 'descricao'=>$descricao,'valor'=>$valor);
 
-                if ($this->input->post('altera')){
+                if ($this->input->post('alterar')){
                         $this->ProdutoModel->alterar($data);
                         echo "Records Updated Successfully";
                 }
+        }
+
+        public function deletar_produto() {                
+
+                $idProduto = $this->input->get('Getdelete');
+                
+                $this->load->model("ProdutoModel","produto"); 
+                
+                if ($this->produto->excluir($idProduto)){
+                       echo "Records deleted Successfully";    
+                }
+
         }
         
 }
