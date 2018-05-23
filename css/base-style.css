@@ -44,11 +44,17 @@
 .container {
     width: 100%;
     border-color: blue;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .box {
     width: 100px; height: 200px;
-	margin: 10px 100px;
+	margin: 10px 80px;
 	display: inline-block;
+}
+
+.texto-item{
+	font-size:12px; 
+	width:170px; 
+	align-content: center;
 }

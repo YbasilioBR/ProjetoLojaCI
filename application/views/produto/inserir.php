@@ -8,7 +8,7 @@
     <body class="fundo">
 
         <div class="cabecalho"></div>
-            <form method="post" action="alterar_produto">
+            <form method="post" action="inserir_produto">
             <div class="conteudo">
                  <div class="dentroconteudo">
                     <h1> DIGITE O PRODUTO A SER INSERIDO </h1>

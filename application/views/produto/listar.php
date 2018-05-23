@@ -27,12 +27,20 @@
             <div class="container">
                 <?php foreach ($resultado as $result): ?>
                 <div class="box">
-                    <p><?php echo $result->descricao; ?></p>
-                    <p><?php echo $result->valor; ?></p>
-  
-                    <button name="GetProd" id="alterar" type="submit" name="alterar" onClick="myfunction(this.id)" value="<?php echo $result->id_produto; ?>"​​​​​>Alterar</button>
-                                 
+                    
+                    <img src="../../imagens/VOL40.jpg" alt="Smiley face" height="300" width="250">
+                    
+                    <div class="box">
+
+                    <p class="texto-item"><?php echo $result->descricao; ?></p>
+                    <p class="texto-item"><?php echo $result->valor; ?></p>
+
+                    </div>
+
+                    <button name="GetProd" id="alterar" type="submit" name="alterar" onClick="myfunction(this.id)" value="<?php echo $result->id_produto; ?>"​​​​​>Alterar</button>        
                     <button name="Getdelete" id="excluir" type="submit" name="excluir" onClick="myfunction(this.id)" value="<?php echo $result->id_produto; ?>"​​​​​>Excluir</button>
+                    
+                    
                 </div>            
             <?php endforeach; ?>
             </div>
