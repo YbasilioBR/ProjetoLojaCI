@@ -1,13 +1,13 @@
 *{
 	margin:0;
-	
 }
 
 .fundo{	
 	background-color:black;
 	position:absolute; 
     width:100%; 
-    height:100%;
+	height:100%;
+	background-image:url(../imagens/background.jpg);
 }
 
 .cabecalho{	
@@ -15,8 +15,6 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	height:170px;
-	margin-left:15%;
-	margin-right:15%;	
 	background-size: 950px 170px;
 	background-image:url(../imagens/Capa.jpg);
 	
@@ -25,11 +23,9 @@
 .menu{	
 	bottom:95%;
 	background-color:#000;
-	height:10%;
+	height:50px;
 	border-style: inset;
 	border-color: transparent;
-	margin-left: 15%;
-	margin-right: 15%;
 }
 
 nav.menu ul li{
@@ -38,7 +34,6 @@ nav.menu ul li{
 }
 
 nav.menu ul li a{
-	display: block ;
 	padding: 30px;
 	padding-top: 15px;
 	color: #FFF;
@@ -89,6 +84,7 @@ ul,li{
 ul li{
 	margin:1em;
 	float:left;
+	margin-bottom: 0px;
 }
 
 .texto-item{
@@ -97,4 +93,21 @@ ul li{
 	text-transform: uppercase;
 	font-size: 14px;
 	width: 200px;
+	margin-bottom: 5px;
+}
+
+.texto-item a{
+	text-decoration:none; 
+}
+
+.texto-item a:visited{
+	color:black;
+}
+
+.rodape{	
+	background-color:black;
+	background-position: center;
+	background-repeat: no-repeat;
+	height:50px;
+	background-size: 950px 170px;	
 }
