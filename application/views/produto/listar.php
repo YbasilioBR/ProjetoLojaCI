@@ -24,25 +24,28 @@
     <form id="lista" method="get">
     <div class="conteudo">
         <div class="dentroconteudo">
-            <div class="container">
-                <?php foreach ($resultado as $result): ?>
+            <div class="container"> 
                 <div class="box">
-                    
-                    <img src="../../imagens/VOL40.jpg" alt="Smiley face" height="300" width="250">
-                    
-                    <div class="box">
-
-                    <p class="texto-item"><?php echo $result->descricao; ?></p>
-                    <p class="texto-item"><?php echo $result->valor; ?></p>
-
-                    </div>
-
-                    <button name="GetProd" id="alterar" type="submit" name="alterar" onClick="myfunction(this.id)" value="<?php echo $result->id_produto; ?>"​​​​​>Alterar</button>        
-                    <button name="Getdelete" id="excluir" type="submit" name="excluir" onClick="myfunction(this.id)" value="<?php echo $result->id_produto; ?>"​​​​​>Excluir</button>
-                    
-                    
+                    <ul>
+                        <li>
+                            <img src="../../imagens/VOL40.jpg" alt="Smiley face" height="250" width="200">
+                        </li>
+                    </ul>
+                </div> 
+                <div class="box">
+                    <ul>
+                        <li>
+                            <img src="../../imagens/VOL40.jpg" alt="Smiley face" height="250" width="200">
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <li>
+                            <img src="../../imagens/VOL40.jpg" alt="Smiley face" height="250" width="200">
+                        </li>
+                    </ul>
                 </div>            
-            <?php endforeach; ?>
             </div>
         </div>
     </form>
